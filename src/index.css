@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    font-family: 'Tilt Warp', cursive;
+}
+.custom-text{
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+}
+.section__padding{
+    padding: 1.5rem 3rem;
+}
+.custom-shape-divider-bottom-1696090008 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696090008 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 90px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1696090008 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.gradient__text{
+    background: rgb(134,5,255);
+background: linear-gradient(112deg, rgba(134,5,255,1) 0%, rgba(215,11,223,1) 23%, rgba(255,0,57,1) 54%, rgba(255,94,8,1) 79%, rgba(255,184,0,1) 100%);
+    background-clip: text;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.gradient__text2{
+    background: rgb(68,0,132);
+    background: linear-gradient(112deg, rgba(68,0,132,1) 0%, rgba(11,33,223,1) 23%, rgba(0,44,255,1) 54%, rgba(0,204,198,1) 73%, rgba(0,255,179,1) 95%);
+    background-clip: text;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.gradient__text2:hover{
+    color: transparent;
+}
+.gradient__text2active{
+    color: transparent;
+}
+.gradient__text:hover{
+    color: transparent;
+}
+.gradient__textactive{
+    color: transparent;
+}
+.scales{
+
+}
+.scales:hover{
+    animation: scale-sides 1s ease-out forwards;
+}
+@keyframes scale-sides {
+    100%{
+        width: 100px;
+    }
+}
+/* Apply general styles to the link */
+.link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Create the moving bar */
+  .link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-radius: 15px;
+    height: 4px; /* Adjust the height of the bar */
+    background: linear-gradient(112deg, rgba(134,5,255,1) 0%, rgba(215,11,223,1) 23%, rgba(255,0,57,1) 54%, rgba(255,94,8,1) 79%, rgba(255,184,0,1) 100%);
+    transition: width 0.3s ease; /* Set the transition speed and easing */
+  }
+  
+  /* Define the hover effect */
+  .link:hover::after {
+    width: 100%; /* Expand the bar to cover the link */
+  }
+  .custom-shape-divider-top-1696107783 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1696107783 svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 103px;
+    transform: rotateY(180deg);
+    z-index: 20;
+}
+
+.custom-shape-divider-top-1696107783 .shape-fill {
+    fill: #FFFFFF;
+}
+.gradient__side{
+    position: relative;
+}
+.gradient__side::after{
+    content: '';
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(134,5,255,1) 0%, rgba(215,11,223,1) 23%, rgba(255,0,57,1) 54%, rgba(255,94,8,1) 79%, rgba(255,184,0,1) 100%);
+    animation: gradient-animation 8s ease-in-out infinite;
+}
+.gradient__side-right{
+    position: relative;
+}
+.gradient__side-right::after{
+    content: '';
+    width: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(134,5,255,1) 0%, rgba(215,11,223,1) 23%, rgba(255,0,57,1) 54%, rgba(255,94,8,1) 79%, rgba(255,184,0,1) 100%);
+    animation: gradient-animation 8s ease-in-out infinite;
+}
+.topbar{
+    position: relative;
+}
+.topbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(112deg, #8605ff 0%, rgba(215,11,223,1) 23%, rgba(255,0,57,1) 54%, #ff5e08 79%, rgba(255,184,0,1) 100%);
+    animation: gradient-animation 8s ease-in-out infinite;
+
+}
+.gradient__button{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.gradient__button:hover{
+    background: rgb(134,5,255);
+    background: linear-gradient(112deg, #8605ff 0%, rgba(215,11,223,1) 23%, rgba(255,0,57,1) 54%, #ff5e08 79%, rgba(255,184,0,1) 100%);
+    color: white;
+    animation: gradient-animation 8s ease-in-out infinite;
+
+}
+  @keyframes gradient-animation {
+    0% {
+        background-size: 100% 100%;
+      background-position: 0% 50%;
+    }
+    50% {
+        background-size: 360% 360%;
+        background-position: 100% 50%;
+    }
+    100% {
+        background-size: 100% 100%;
+      background-position: 0% 50%;
+    }
+  }
+  .gradient{
+    background: linear-gradient(112deg, rgba(134,5,255,1) 0%, rgba(215,11,223,1) 23%, rgba(255,0,57,1) 54%, rgba(255,94,8,1) 79%, rgba(255,184,0,1) 100%);
+}
+.gradient__animation{
+    background: linear-gradient(112deg, rgba(134,5,255,1) 0%, rgba(215,11,223,1) 23%, rgba(255,0,57,1) 54%, rgba(255,94,8,1) 79%, rgba(255,184,0,1) 100%);
+    animation: gradient-animation 8s ease-in-out infinite;
+  }
+  .custom-shape-divider-bottom-1696194725 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696194725 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 106px;
+}
+
+.custom-shape-divider-bottom-1696194725 .shape-fill {
+    fill: #262626;
+}
+.custom-shape-divider-top-1696198713 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1696198713 svg {
+    position: relative;
+    display: block;
+    width: calc(104% + 1.3px);
+    height: 123px;
+}
+
+.custom-shape-divider-top-1696198713 .shape-fill {
+    fill: #262626;
+}
+.custom-shape-divider-bottom-1696259399 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696259399 svg {
+    position: relative;
+    display: block;
+    width: calc(238% + 1.3px);
+    height: 101px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1696259399 .shape-fill {
+    fill: #171717;
+}
+.custom-shape-divider-top-1696259736 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1696259736 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 140px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1696259736 .shape-fill {
+    fill: #262626;
+}
+.custom-shape-divider-bottom-1696274203 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696274203 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 140px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1696274203 .shape-fill {
+    fill: #262626;
+}
+.custom-shape-divider-top-1696274409 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1696274409 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 140px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1696274409 .shape-fill {
+    fill: #171717;
+}
